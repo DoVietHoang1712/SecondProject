@@ -5,6 +5,7 @@ const AuthorSchema = new mongoose.Schema({
     name: {type: String, required: true}
 });
 
+AuthorSchema.pre('remove', function (next) {
     Book.find({author: this.id}, (err, books) => {
         if(err) {
             next(err);
