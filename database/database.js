@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const ConnectDB = async () => {
     try {
-        let uri = 'mongodb://hoangdo:hoangdo@localhost:27017/Mongo';
+        let uri = 'mongodb://hoangdo:hoangdo@localhost:27017/MongoDB';
         let options = {
             connectTimeoutMS: 3000,
             useNewUrlParser: true,

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo</title>
+        <meta charset="utf-8" />
+        <link type="text/css" rel="stylesheet" href="test2.2.css" />
+    </head>
+    <body>
+        <div class="hero">
+            <div class="form-box">
+                <div class="btn-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn"><a href="users/signIn">Log In</a></button>
+                    <button type="button" class="toggle-btn"><a href="users/regis">Register</a></button>
+                </div>
+                <div class="social-btn">
+                    <img src="fb.png"/>
+                    <img src="tw.png"/>
+                    <img src="gp.png"/>
+                </div>
+                <form id="login" class="input-group" method="POST">
+                    <input type="text" class="input-field" placeholder="Enter Email" name="email" required />
+                    <input type="text" class="input-field" placeholder="Enter Password" name="password" required />
+                    <input type="checkbox" class="check-box"><span>Remember Password</span>
+                    <button type="submit" class="submit-btn">Log In</button>
+                </form>
+                <form id="register" class="input-group" method="POST">
+                    <input type="text" class="input-field" placeholder="User Id" required />
+                    <input type="email" class="input-field" placeholder="Email" required />
+                    <input type="text" class="input-field" placeholder="Enter Password" required />
+                    <input type="checkbox" class="check-box"><span>I agree to the terms & condition</span>
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
